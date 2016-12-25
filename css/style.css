@@ -60,3 +60,8 @@ button:hover {
   background: steelblue;
   color: white;
 }
+
+.selected {
+  background: steelblue;
+  color: white;
+}
