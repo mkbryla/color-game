@@ -22,29 +22,29 @@ function start() {
     setUpEvents();
 }
 
-function reset(){
-  // reseting
-  text.textContent = "";
-  header.style.background = "#232323";
-  gameOver = 0;
-  newColorsBtn.textContent = "New Colors";
-  colors = [];
+function reset() {
+    // reseting
+    text.textContent = "";
+    header.style.background = "#232323";
+    gameOver = 0;
+    newColorsBtn.textContent = "New Colors";
+    colors = [];
 }
 
-function colorSquares(){
-  // drawing colors
-  for (var i = 0; i < numberOfColors; i++) {
-      colors.push(randomColor());
-  }
-  // changing squares background
-  for (var i = 0; i < 6; i++) {
-      if (colors[i]) {
-          squares[i].style.background = colors[i];
-          squares[i].style.display = "block";
-      } else {
-          squares[i].style.display = "none";
-      }
-  }
+function colorSquares() {
+    // drawing colors
+    for (var i = 0; i < numberOfColors; i++) {
+        colors.push(randomColor());
+    }
+    // changing squares background
+    for (var i = 0; i < 6; i++) {
+        if (colors[i]) {
+            squares[i].style.background = colors[i];
+            squares[i].style.display = "block";
+        } else {
+            squares[i].style.display = "none";
+        }
+    }
 }
 
 function randomColor() {
