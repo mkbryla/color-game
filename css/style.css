@@ -53,7 +53,6 @@ h1 span {
     background: #232323;
     border-radius: 15%;
     cursor: pointer;
-    -webkit-transition: 0.4s;
     transition: 0.4s;
 }
 
@@ -71,7 +70,6 @@ button {
     text-transform: uppercase;
     cursor: pointer;
     font-size: inherit;
-    -webkit-transition: 0.4s;
     transition: 0.4s;
     min-width: 20%;
     padding: 0;
@@ -85,11 +83,6 @@ button:hover {
 .selected {
     background: steelblue;
     color: white;
-}
-
-footer {
-    text-align: center;
-    margin: 20px;
 }
 
 @media screen and (max-width: 768px) {

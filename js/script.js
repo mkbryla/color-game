@@ -37,12 +37,12 @@ function colorSquares() {
         colors.push(randomColor());
     }
     // changing squares background
-    for (var i = 0; i < 6; i++) {
-        if (colors[i]) {
-            squares[i].style.background = colors[i];
-            squares[i].style.display = "block";
+    for (var j = 0; j < 6; j++) {
+        if (colors[j]) {
+            squares[j].style.background = colors[j];
+            squares[j].style.display = "block";
         } else {
-            squares[i].style.display = "none";
+            squares[j].style.display = "none";
         }
     }
 }
@@ -51,7 +51,7 @@ function randomColor() {
     var r = Math.floor(Math.random() * 256);
     var g = Math.floor(Math.random() * 256);
     var b = Math.floor(Math.random() * 256);
-    return "rgb(" + r + ", " + g + ", " + b + ")"
+    return "rgb(" + r + ", " + g + ", " + b + ")";
 }
 
 function isCorrect() {
@@ -85,18 +85,18 @@ function setUpEvents() {
         easy.classList.add("selected");
         hard.classList.remove("selected");
         start();
-    })
+    });
 
     hard.addEventListener("click", function() {
         numberOfColors = 6;
         easy.classList.remove("selected");
         hard.classList.add("selected");
         start();
-    })
+    });
 
     for (var i = 0; i < squares.length; i++) {
         squares[i].addEventListener("click", isCorrect);
     }
 }
 
-start()
+start();
